@@ -23,7 +23,12 @@ function navbar_click_event(e){
 	}
 }
 
+function select_bar_click_event(e){
+	// This function will be triggered when the select_bar been clicked
+
+}
+
 $(document).ready(function(){
-	document.getElementById('navbar-control').addEventListener('click',navbar_click_event, true);
-	
+	document.getElementById('navbar-control').addEventListener('click', navbar_click_event, true);
+	document.getElementById('select_bar').addEventListener('click', select_bar_click_event, true);
 });

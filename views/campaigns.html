@@ -5,6 +5,9 @@
 	<title>AMI Campaigns</title>
 	<!-- Include bootstrap css -->
 	<link rel="stylesheet" href="../public/stylesheet/bootstrap.css">
+	<!-- Include customize css -->
+	<link rel="stylesheet" href="../public/stylesheet/campaigns.css">
+
 </head>
 <body>
 	<nav class="navbar navbar-default" role="navigation">
@@ -42,7 +45,50 @@
 	</nav>
 
 	<div class="container" id="main_info">
+		<div class="row">
+			<div class="col-md-8 col-xs-6"><h1>digbil</h1></div>
+			<div class="col-md-4 col-xs-6">
+				<div class="header_module">
+					<div class="header_center_module">
+						<button type="button" class="btn btn-success pull-right">
+							<span class="glyphicon glyphicon-book"></span>
+							&nbsp;Start a Campaign
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="row">
+				<div class="col-md-1 select_bar" id="select_bar">
+					<div class="selection">
+						<div class="selection_icon"><span class="glyphicon glyphicon-dashboard"></span></div>
+						<div class="selection_title">Dashboard</div>		
+					</div>
+					<div class="selection selection_active">
+						<div class="selection_icon"><span class="glyphicon glyphicon-tasks"></span></div>
+						<div class="selection_title">Campaigns</div>
+					</div>
+					<div class="selection">
+						<div class="selection_icon"><span class="glyphicon glyphicon-cloud"></span></div>
+						<div class="selection_title">Library</div>
+					</div>
+					<div class="selection">
+						<div class="selection_icon"><span class="glyphicon glyphicon-usd"></span></div>
+						<div class="selection_title">Transaction</div>
+					</div>
+					<div class="selection">
+						<div class="selection_icon"><span class="glyphicon glyphicon-envelope"></span></div>
+						<div class="selection_title">Hello</div>
+					</div>
+				</div>
+				<div class="col-md-10 select_content">
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<footer></footer>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
