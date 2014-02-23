@@ -8,8 +8,15 @@
 	<!-- Include customize css -->
 	<link rel="stylesheet" href="../public/stylesheet/campaigns.css">
 
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
 </head>
 <body>
+<header>
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid">
 			<!-- toggle get grouped for better mobile display -->
@@ -43,8 +50,9 @@
 		    <!-- /.navbar-collapse -->				
 		</div>
 	</nav>
-
-	<div class="container" id="main_info">
+</header>
+<section>
+	<div class="container" id="campaign">
 		<div class="row">
 			<div class="col-md-8 col-xs-6"><h1>digbil</h1></div>
 			<div class="col-md-4 col-xs-6">
@@ -61,34 +69,199 @@
 		<div class="content">
 			<div class="row">
 				<div class="col-md-1 select_bar" id="select_bar">
-					<div class="selection">
+					<div class="selection" module-name="dashboard">
 						<div class="selection_icon"><span class="glyphicon glyphicon-dashboard"></span></div>
 						<div class="selection_title">Dashboard</div>		
 					</div>
-					<div class="selection selection_active">
+					<div class="selection selection_active" module-name="campaigns">
 						<div class="selection_icon"><span class="glyphicon glyphicon-tasks"></span></div>
 						<div class="selection_title">Campaigns</div>
 					</div>
-					<div class="selection">
+					<div class="selection remove_top_border" module-name="library">
 						<div class="selection_icon"><span class="glyphicon glyphicon-cloud"></span></div>
 						<div class="selection_title">Library</div>
 					</div>
-					<div class="selection">
+					<div class="selection" module-name="transaction">
 						<div class="selection_icon"><span class="glyphicon glyphicon-usd"></span></div>
 						<div class="selection_title">Transaction</div>
 					</div>
-					<div class="selection">
+					<div class="selection" module-name="hello">
 						<div class="selection_icon"><span class="glyphicon glyphicon-envelope"></span></div>
 						<div class="selection_title">Hello</div>
 					</div>
 				</div>
-				<div class="col-md-10 select_content">
+				<div class="col-md-10 select_content" id="select_content">
+					<div class="hide" id="dashboard">This is module dashbaord</div>
+					<div id="campaigns">
+						<div class="row module_back_path">
+							<div class="col-md-12 col-sm-12">
+								<button type="button" class="btn btn-primary btn-xs display-inline">
+									<span class="glyphicon glyphicon-arrow-left"></span>
+									&nbsp;back
+								</button>
+								<ol class="breadcrumb display-inline">
+									<li><a href="#">Ongoing Campaigns</a></li>
+									<li class="active">Organic Cosmetic</li>
+								</ol>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-sm-12">
+								<div class="title">Organic Cosmetic</div>
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<div class="pull-right user_type">
+									<span class="glyphicon glyphicon-user"></span>
+									&nbsp;Administrator
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-12">
+								<div class="campaigns_organic_left">
+									<div class="row">
+										<div class="col-md-12 col-sm-12">
+											<video controls width="100%">
+												<source src="../public/video/test.mp4" type="video/mp4" />
+													您的瀏覽器不支援HTML 5影片播放標籤<video>格式。
+													Your browser doesn't support the <video> tag.
+											</video>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 table_tag">ID Number</div>
+										<div class="col-md-6 table_val">cp-100-261-225</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 table_tag">Length</div>
+										<div class="col-md-6 table_val">30sec.</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 table_tag">Money Out</div>
+										<div class="col-md-6 table_val">1200 USD</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 table_tag">Created With</div>
+										<div class="col-md-6 table_val">Auto Pilot</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 table_tag">Starts From</div>
+										<div class="col-md-6 table_val">06/01/2011</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 table_tag">Ends On</div>
+										<div class="col-md-6 table_val">06/30/2011</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 col-sm-12">
+								<div class="campaign_organic_right">
+									<div class="panel-group" id="accordion">
+										<div class="panel panel-default">
+											<div class="panel-heading customized_panel_heading" id="acc-playbacks">
+										    	<h4 class="panel-title">
+										    	<span class="glyphicon glyphicon-eye-open"></span>&nbsp;&nbsp;
+										    	<a target-name="acc-playbacks" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										        	
+										        	Playbacks
+													<span class="glyphicon glyphicon-chevron-up pull-right hide"></span>
+													<span class="glyphicon glyphicon-chevron-down pull-right"></span>
+												</a>
+												</h4>
+											</div>
+											<div id="collapseOne" class="panel-collapse collapse in">
+												<div class="panel-body">
+													This is the content of Playbacks
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading customized_panel_heading" id="acc-members">
+										    	<h4 class="panel-title">
+										    	<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;
+										    	<a target-name="acc-members" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+										        	
+										        	Members
+										        	<span class="glyphicon glyphicon-chevron-up pull-right hide"></span>
+										        	<span class="glyphicon glyphicon-chevron-down pull-right"></span>
+												</a>
+												
+												</h4>
+											</div>
+											<div id="collapseTwo" class="panel-collapse collapse in">
+												<div class="panel-body">
+													This is the content of Members
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading customized_panel_heading panel_heading_selected" id="acc-manage">
+										    	<h4 class="panel-title">
+										    	<span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;
+										    	<a target-name="acc-manage" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+										        	
+										        	Manage
+													<span class="glyphicon glyphicon-chevron-up pull-right"></span>
+													<span class="glyphicon glyphicon-chevron-down pull-right hide"></span>
+												</a>
+												</h4>
+											</div>
+											<div id="collapseThree" class="panel-collapse collapse">
+												<div class="panel-body">
+													<div class="row">
+														<div class="col-md-10">Edit this campaign? (Time, Content, Budget...etc.)</div>
+														<div class="col-md-2">
+															<button type="button" class="btn btn-warning btn-xs pull-right" onclick="alert('this is Edit button')">Edit</button>
+														</div>
+													</div>
+													<hr>
+													<div class="row">
+														<div class="col-md-10">Any issue about managing campaign?</div>
+														<div class="col-md-2">
+															<button type="button" class="btn btn-warning btn-xs pull-right" onclick="alert('this is Help button')">Help</button>
+														</div>
+													</div>
+													<hr>
+													<div class="row">
+														<div class="col-md-10">Stop this campaign right away?</div>
+														<div class="col-md-2">
+															<button type="button" class="btn btn-warning btn-xs pull-right" onclick="alert('this is Stop button')">Stop</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hide" id="library">This is module library</div>
+					<div class="hide" id="transaction">This is module transaction</div>
+					<div class="hide" id="hello">This is moduel hello</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<footer></footer>
+	<div class="container hide" id="canvas">This is canvas page</div>
+	<div class="container hide" id="shop">This is shop page</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="row">
+					<div class="col-md-2">About DIGBIL</div>
+					<div class="col-md-2">Tutorial</div>
+					<div class="col-md-2">Support</div>
+					<div class="col-md-2">Terms of Use</div>
+					<div class="col-md-2">Contact</div>
+				</div>
+			</div>
+			<div class="col-md-2 pull-right">Copyright 2014&copy;Digbil</div>
+		</div>
+	</div>
+</footer>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
