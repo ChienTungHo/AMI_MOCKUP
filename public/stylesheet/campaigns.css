@@ -1,9 +1,17 @@
-#main_info .header_module{
+.hide{
+	display: none;
+}
+
+.display-inline{
+	display: inline-block;
+}
+
+#campaign .header_module{
 	min-height: 74px;
 	position: relative;
 }
 
-#main_info .header_center_module{
+#campaign .header_center_module{
 	height: 60%;
 	width: 100%;
 	top: 0px;
@@ -12,7 +20,7 @@
 	margin: auto 0;
 }
 
-#main_info .content{
+#campaign .content{
 	border-top: 8px solid #74898a;
 	border-right: 1px solid #74898a;
 	border-left: 1px solid #74898a;
@@ -21,52 +29,124 @@
 	padding: 35px 0px; 
 }
 
-#main_info .content .select_bar{
+#campaign .content .select_bar{
 	margin-left:35px;
-	padding-right: 5px;
+	padding-right: 0px;
 }
 
-#main_info .content .select_content{
-	padding-left: 0px;
+#campaign .content .select_content{
+	padding-top: 30px;
+	padding-bottom: 60px;
 	background-color: #D8D8D8;
-	height: 500px;
+	min-height: 500px;
 }
 
-#main_info .content .select_bar .selection{
+#campaign .content .select_bar .selection{
 	height: 70px;
 	border-top: 2px solid #D8D8D8;
 	vertical-align: middle;
 	text-align: center;
-	padding: 5px 5px 15px;
+	padding: 5px 0px 15px;
+	margin-right: 5px;
 	cursor: pointer;
 	color: #808080;
 }
 
-#main_info .content .select_bar .selection:hover{
+#campaign .content .select_bar .selection:hover{
 	color: #181818;
 }
 
-#main_info .content .select_bar .selection:last-child{
+#campaign .content .select_bar .selection:last-child{
 	border-bottom: 2px solid #D8D8D8;
 }
 
-#main_info .content .select_bar .selection .selection_icon{
+#campaign .content .select_bar .selection .selection_icon{
 	font-size: 30px;
 }
 
-#main_info .content .select_bar .selection .selection_title{
+#campaign .content .select_bar .selection .selection_title{
 	font-size: 10px;
 	margin-top: -5px;
 }
 
-#main_info .content .select_bar .selection_active{
+#campaign .content .select_bar .selection_active{
 	background-color: #D8D8D8;
-	box-shadow: 2px 0px 0 3px #D8D8D8;
+	margin-right: 0px;
 	color: #181818;
 }
 
+#campaign .content .select_bar .remove_top_border{
+	border-top: 0px;
+}
+
+#campaigns{
+	background-color: #ecf0f1;
+}
+
+#campaigns .module_back_path{
+	padding: 5px;
+}
+
+#campaigns .title{
+	background-color: #2c3e50;
+	color: #ecf0f1;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px 0px;
+	font-weight: bold;
+}
+
+#campaigns .user_type{
+	color: #ecf0f1;
+	padding: 10px;
+	margin-top: -41px;
+}
+
+#campaigns .campaigns_organic_left{
+	padding: 20px 10px;
+}
+
+#campaigns .campaigns_organic_left .table_tag{
+	font-size: 8px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+#campaigns .campaigns_organic_left .table_val{
+	font-size: 8px;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #258cd1;
+}
+
+#campaigns .campaign_organic_right{
+	padding: 20px 20px 50px 5px;	
+}
+
+#campaigns .campaign_organic_right .customized_panel_heading{
+	background-color: #D8D8D8;
+	border-color: #D8D8D8;
+}
+
+#campaigns .campaign_organic_right .panel_heading_selected{
+	background-color: #3498db;
+	border-color: #3498db;
+	color: #ffffff;
+}
+
+#canvas{
+	height: 500px;
+}
+
+#shop{
+	height: 500px;
+}
+
 footer{
+	padding-top: 30px;
 	margin-top: 50px;
 	background-color: #2c3e50;
-	height: 100px;
+	min-height: 70px;
+	color: #ecf0f1;
+	font-size: 9px;
 }
