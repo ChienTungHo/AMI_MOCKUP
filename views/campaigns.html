@@ -52,6 +52,7 @@
 	</nav>
 </header>
 <section>
+	<!-- Start of the main section -->
 	<div class="container" id="campaign">
 		<div class="row">
 			<div class="col-md-8 col-xs-6"><h1>digbil</h1></div>
@@ -66,8 +67,10 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="content">
 			<div class="row">
+				<!-- The selection bar on the left side -->
 				<div class="col-md-1 select_bar" id="select_bar">
 					<div class="selection" module-name="dashboard">
 						<div class="selection_icon"><span class="glyphicon glyphicon-dashboard"></span></div>
@@ -90,9 +93,16 @@
 						<div class="selection_title">Hello</div>
 					</div>
 				</div>
+				<!-- End of the selection bar -->
+
+				<!-- The main info of the selection -->
 				<div class="col-md-10 select_content" id="select_content">
 					<div class="hide" id="dashboard">This is module dashbaord</div>
+					
+					<!-- When select the campaigns option, this part will be display -->
 					<div id="campaigns">
+						
+						<!-- The first line of the campaigns section -->
 						<div class="row module_back_path">
 							<div class="col-md-12 col-sm-12">
 								<button type="button" class="btn btn-primary btn-xs display-inline">
@@ -105,6 +115,9 @@
 								</ol>
 							</div>
 						</div>
+						<!-- End of the first line -->
+
+						<!-- The second line of the campaigns section -->
 						<div class="row">
 							<div class="col-md-12 col-sm-12">
 								<div class="title">Organic Cosmetic</div>
@@ -116,7 +129,10 @@
 								</div>
 							</div>
 						</div>
+						<!-- End of the second line -->
+
 						<div class="row">
+							<!-- Start the left side of the campaign info -->
 							<div class="col-md-4 col-sm-12">
 								<div class="campaigns_organic_left">
 									<div class="row">
@@ -154,9 +170,16 @@
 									</div>
 								</div>
 							</div>
+							<!-- End of the left side of the campaign info -->
+
+							<!-- Start the right side of the campaign info -->
 							<div class="col-md-8 col-sm-12">
 								<div class="campaign_organic_right">
+
+									<!-- Start of the accordion selection -->
 									<div class="panel-group" id="accordion">
+
+										<!-- Start of first panel -->
 										<div class="panel panel-default">
 											<div class="panel-heading customized_panel_heading" id="acc-playbacks">
 										    	<h4 class="panel-title">
@@ -175,6 +198,9 @@
 												</div>
 											</div>
 										</div>
+										<!-- End of first panel -->
+
+										<!-- Start of second panel -->
 										<div class="panel panel-default">
 											<div class="panel-heading customized_panel_heading" id="acc-members">
 										    	<h4 class="panel-title">
@@ -194,6 +220,9 @@
 												</div>
 											</div>
 										</div>
+										<!-- End of second panel -->
+
+										<!-- Start of third panel -->
 										<div class="panel panel-default">
 											<div class="panel-heading customized_panel_heading panel_heading_selected" id="acc-manage">
 										    	<h4 class="panel-title">
@@ -231,11 +260,19 @@
 												</div>
 											</div>
 										</div>
+										<!-- End of third panel -->
+
 									</div>
+									<!-- End of the accordion selection -->
+
 								</div>
 							</div>
+							<!-- End of the right side of the campaign info -->
+
 						</div>
 					</div>
+					<!-- End of the campaigns option -->
+
 					<div class="hide" id="library">This is module library</div>
 					<div class="hide" id="transaction">This is module transaction</div>
 					<div class="hide" id="hello">This is moduel hello</div>
@@ -245,7 +282,10 @@
 	</div>
 	<div class="container hide" id="canvas">This is canvas page</div>
 	<div class="container hide" id="shop">This is shop page</div>
+	<!-- End of the main section -->
 </section>
+
+<!-- the footer will be display for every page -->
 <footer>
 	<div class="container">
 		<div class="row">
@@ -262,13 +302,14 @@
 		</div>
 	</div>
 </footer>
+<!-- End of footer -->
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../public/javascript/bootstrap.js"></script>
-    <!-- Public javascript -->
-	<script src="../public/javascript/campaigns.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../public/javascript/bootstrap.js"></script>
+<!-- Public javascript -->
+<script src="../public/javascript/campaigns.js"></script>
 
 </body>
 </html>

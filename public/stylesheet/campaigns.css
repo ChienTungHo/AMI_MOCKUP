@@ -1,3 +1,6 @@
+/* This is campaign.css file */
+
+/* Global setting for all css usage */
 .hide{
 	display: none;
 }
@@ -6,6 +9,7 @@
 	display: inline-block;
 }
 
+/* Setting for the nav bar  */
 #campaign .header_module{
 	min-height: 74px;
 	position: relative;
@@ -20,6 +24,7 @@
 	margin: auto 0;
 }
 
+/* Main section css setting */
 #campaign .content{
 	border-top: 8px solid #74898a;
 	border-right: 1px solid #74898a;
@@ -29,6 +34,9 @@
 	padding: 35px 0px; 
 }
 
+/* This part will set the select_bar in the Main section
+   It will be displayed on the left side of main section
+ */
 #campaign .content .select_bar{
 	margin-left:35px;
 	padding-right: 0px;
@@ -78,7 +86,11 @@
 #campaign .content .select_bar .remove_top_border{
 	border-top: 0px;
 }
+/* End of select bar css setting */
 
+/* Start of campaigns main information
+   It will be displayed on the right side of the main section
+*/
 #campaigns{
 	background-color: #ecf0f1;
 }
@@ -133,15 +145,18 @@
 	border-color: #3498db;
 	color: #ffffff;
 }
+/* End of campaign main information*/
 
+/* Set the min height of the sub page */
 #canvas{
-	height: 500px;
+	min-height: 500px;
 }
 
 #shop{
-	height: 500px;
+	min-height: 500px;
 }
 
+/* Start of footer css setting */
 footer{
 	padding-top: 30px;
 	margin-top: 50px;
@@ -150,3 +165,5 @@ footer{
 	color: #ecf0f1;
 	font-size: 9px;
 }
+/* End of footer setting */
+
